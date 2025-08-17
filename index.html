@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. GRAHA SENTOSA JAYA</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4C+x/bA+1S9F9e/c/6z+fGk+D0D9B/E2kX1X/i/0sFzJp/E8sQ+L4t3Zq8t/C5O5J7K6w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <a href="#home" class="text-xl font-bold text-blue-800">
+          <img src="./img/logo-gsj.png" alt="logo-gsj" class="logo" />
+        </a>
+
+        <div class="flex items-center space-x-4">
+          <div class="relative inline-block text-gray-700">
+            <select
+              id="language-switcher"
+              class="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:shadow-outline cursor-pointer"
+            >
+              <option value="id">ID</option>
+              <option value="en">EN</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+            >
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </div>
+          </div>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              id="nav-home"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              id="nav-about"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >About Company</a
+            >
+            <a
+              href="#problems"
+              id="nav-problems"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Problems & Solutions</a
+            >
+            <a
+              href="#services"
+              id="nav-services"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Services</a
+            >
+            <a
+              href="#stages"
+              id="nav-stages"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Work Stages</a
+            >
+            <a
+              href="#contact"
+              id="nav-contact"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-600 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <div class="flex flex-col p-4 space-y-2">
+          <a
+            href="#home"
+            id="nav-mobile-home"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Home</a
+          >
+          <a
+            href="#about"
+            id="nav-mobile-about"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >About Company</a
+          >
+          <a
+            href="#problems"
+            id="nav-mobile-problems"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Problems & Solutions</a
+          >
+          <a
+            href="#services"
+            id="nav-mobile-services"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Services</a
+          >
+          <a
+            href="#stages"
+            id="nav-mobile-stages"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Work Stages</a
+          >
+          <a
+            href="#contact"
+            id="nav-mobile-contact"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="space-y-24 mt-8">
+      <section
+        id="home"
+        class="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center rounded-xl overflow-hidden"
+      >
+        <div
+          id="background-carousel"
+          class="absolute inset-0 z-0 transition-transform duration-700 ease-in-out"
+        >
+          <img
+            src="./img/carousel-1 (2).jpg"
+            alt="Proyek Konstruksi PT. Graha Sentosa Jaya"
+            class="absolute w-full h-full object-cover opacity-100 transition-opacity duration-1000"
+          />
+          <img
+            src="./img/carousel-2.jpg"
+            alt="Proyek Konstruksi PT. Graha Sentosa Jaya"
+            class="absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000"
+          />
+        </div>
+
+        <div class="relative z-10 max-w-3xl mx-auto text-white">
+          <div
+            class="bg-blue-900 bg-opacity-50 backdrop-blur-sm p-8 rounded-xl"
+          >
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight fade-in"
+            >
+              PT. GRAHA SENTOSA JAYA
+            </h1>
+            <p
+              class="mt-4 text-xl text-yellow-300 sm:text-2xl font-light fade-in"
+              style="animation-delay: 0.5s"
+            >
+              Building the future. Today.
+            </p>
+            <p
+              class="mt-6 text-lg sm:text-xl max-w-2xl mx-auto fade-in"
+              style="animation-delay: 1s"
+            >
+              We bring your most ambitious construction projects to life, from
+              cozy private homes to large-scale commercial and industrial
+              facilities. We combine 20 years of experience and European quality
+              standards to guarantee a result that will exceed your
+              expectations.
+            </p>
+            <div
+              class="mt-8 space-y-4 md:space-y-0 md:space-x-4 fade-in"
+              style="animation-delay: 1.5s"
+            >
+              <a
+                href="#contact"
+                class="inline-block bg-white text-blue-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-colors duration-300 transform hover:scale-105"
+              >
+                Start your project today
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl font-bold text-center text-yellow-700 mb-12 slide-up"
+          id="why-choose-us-title"
+        >
+          Why choose us?
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 slide-up"
+          >
+            <img
+              src="./img/undraw_qa-engineers_kgp8.svg"
+              alt="quality-illustration"
+            />
+            <h3 class="text-xl font-bold text-blue-800 mb-2" id="why-1-title">
+              Reliability and quality
+            </h3>
+            <p class="text-gray-600" id="why-1-desc">
+              We build without mold or cracks. We use only proven modern
+              materials and technologies, and work with the best global brands.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 slide-up"
+          >
+            <img
+              src="./img/undraw_experts_v2vy.svg"
+              alt="expertise-illustration"
+            />
+            <h3 class="text-xl font-bold text-blue-800 mb-2" id="why-2-title">
+              Experience and expertise
+            </h3>
+            <p class="text-gray-600" id="why-2-desc">
+              Our international experience allows us to find optimal solutions
+              for projects of any complexity.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-blue-600 slide-up"
+          >
+            <img
+              src="./img/undraw_under-construction_c2y1.svg"
+              alt="accuracy-illustration"
+            />
+            <h3 class="text-xl font-bold text-blue-800 mb-2" id="why-3-title">
+              Accuracy and transparency
+            </h3>
+            <p class="text-gray-600" id="why-3-desc">
+              We guarantee adherence to agreed-upon deadlines and budget. You
+              will always be informed about every stage of the work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2
+          class="text-4xl font-bold text-center text-blue-900 mb-4 slide-up"
+          id="about-title"
+        >
+          Our experience is your confidence!
+        </h2>
+        <p
+          class="text-center text-xl text-gray-600 max-w-3xl mx-auto mb-12 slide-up"
+          id="about-intro"
+        >
+          We have combined the many years of experience of Indonesian engineers
+          and builders with a European approach to project management.
+        </p>
+        <div class="flex justify-center mb-12 slide-up">
+          <img
+            src="./img/carousel-2 (2).jpg"
+            alt="Tim PT. Graha Sentosa Jaya"
+            class="rounded-xl shadow-lg"
+          />
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+          <div class="bg-white p-8 rounded-xl shadow-lg slide-up">
+            <h3
+              class="text-2xl font-bold text-blue-800 mb-4"
+              id="mission-title"
+            >
+              Our Mission
+            </h3>
+            <p class="text-lg text-gray-700" id="mission-desc">
+              To bring your ideas to life by building international-level real
+              estate that retains and multiplies its value.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg slide-up">
+            <h3 class="text-2xl font-bold text-blue-800 mb-4" id="values-title">
+              Our Values
+            </h3>
+            <ul class="space-y-4 text-gray-700 text-lg">
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-check-circle text-yellow-600 mt-1 mr-3"
+                ></i>
+                <div id="value-1 content">
+                  <span class="value-title">Quality without compromise.</span>
+                  <p>
+                    We always use only proven materials and advanced
+                    technologies, working directly with manufacturers.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-check-circle text-yellow-600 mt-1 mr-3"
+                ></i>
+                <div id="value-2 content">
+                  <span class="value-title">Openness and honesty.</span>
+                  <p>
+                    We build trusting relationships with clients by providing
+                    complete information about every stage of the project.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-check-circle text-yellow-600 mt-1 mr-3"
+                ></i>
+                <div id="value-3 content">
+                  <span class="value-title">A strong team.</span>
+                  <p>
+                    We work as a single mechanism, where everyone contributes to
+                    the overall success. We don't compete internally; we compete
+                    with the market to offer you the best.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-check-circle text-yellow-600 mt-1 mr-3"
+                ></i>
+                <div id="value-4 content">
+                  <span class="value-title">Safety and order.</span>
+                  <p>
+                    Strict safety and cleanliness rules are always observed on
+                    our sites.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fa-solid fa-check-circle text-yellow-600 mt-1 mr-3"
+                ></i>
+                <div id="value-5 content">
+                  <span class="value-title">Professionalism and growth.</span>
+                  <p>
+                    Our team is constantly learning, implementing new systems,
+                    and undergoing testing to maintain the highest quality
+                    standards.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="problems"
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-blue-50 rounded-xl shadow-inner"
+      >
+        <h2
+          class="text-4xl font-bold text-center text-blue-900 mb-12 slide-up"
+          id="problems-title"
+        >
+          Market Problems and Our Solutions
+        </h2>
+        <p
+          class="text-center text-xl text-gray-600 max-w-3xl mx-auto mb-12 slide-up"
+          id="problems-intro"
+        >
+          We understand that the construction market can be complex. Many
+          clients face the same problems that lead to financial risks, delays,
+          and poor quality.
+        </p>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3
+              class="text-2xl font-bold text-blue-800 mb-6 slide-up"
+              id="problems-column-title"
+            >
+              Problems you face
+            </h3>
+            <div class="space-y-8">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500 slide-up"
+              >
+                <h4
+                  class="text-lg font-semibold text-red-600 mb-2"
+                  id="problem-1-title"
+                >
+                  Difficulty finding reliable contractors.
+                </h4>
+                <p class="text-gray-600" id="problem-1-desc">
+                  A deceptively low price often leads to incompetence and
+                  problems. Many construction companies leave projects without
+                  proper supervision, relying on a single crew and a foreman who
+                  rarely visits. This leads to norm violations and missed
+                  deadlines.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500 slide-up"
+              >
+                <h4
+                  class="text-lg font-semibold text-red-600 mb-2"
+                  id="problem-2-title"
+                >
+                  Lack of transparent pricing and financial risks.
+                </h4>
+                <p class="text-gray-600" id="problem-2-desc">
+                  Contractors may not account for all work or use cheap
+                  materials in their estimates. As a result, the final project
+                  cost unexpectedly increases, and construction is put on
+                  indefinite hold.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500 slide-up"
+              >
+                <h4
+                  class="text-lg font-semibold text-red-600 mb-2"
+                  id="problem-3-title"
+                >
+                  Poor construction quality.
+                </h4>
+                <p class="text-gray-600" id="problem-3-desc">
+                  In Indonesia, common problems include mold, cracks, and poor
+                  waterproofing. This often happens due to poor drawings,
+                  incomplete information for estimators and workers, as well as
+                  the use of cheap materials and failure to follow technologies.
+                  Workers on site may not have drawings, the necessary tools, or
+                  the skills to use them.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3
+              class="text-2xl font-bold text-blue-800 mb-6 slide-up"
+              id="solutions-column-title"
+            >
+              Our solutions
+            </h3>
+            <p class="text-lg text-gray-700 mb-6 slide-up" id="solutions-intro">
+              Our main goal is to ensure high quality and complete the project
+              on time. We balance your wishes with our mission to build with
+              quality.
+            </p>
+            <div class="space-y-8">
+              <div
+                class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500 slide-up"
+              >
+                <h4
+                  class="text-lg font-semibold text-green-600 mb-2"
+                  id="solution-1-title"
+                >
+                  A reliable partner with full control.
+                </h4>
+                <p class="text-gray-600" id="solution-1-desc">
+                  We don't rely on a single foreman. Our team includes
+                  specialized engineers, technical supervisors, estimators,
+                  procurement specialists, and cost controllers. We use modern
+                  ERP systems, video surveillance, and provide regular reports
+                  so you always know what's happening on site.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500 slide-up"
+              >
+                <h4
+                  class="text-lg font-semibold text-green-600 mb-2"
+                  id="solution-2-title"
+                >
+                  A clear estimate and protection of your interests.
+                </h4>
+                <p class="text-gray-600" id="solution-2-desc">
+                  We sign contracts that protect both parties. Before
+                  calculating the estimate, we audit the drawings and agree on
+                  all materials and technologies. Our goal is to provide you
+                  with an accurate and final project cost, so you avoid
+                  unexpected expenses.
+                </p>
+              </div>
+              <div
+                class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500 slide-up"
+              >
+                <h4
+                  class="text-lg font-semibold text-green-600 mb-2"
+                  id="solution-3-title"
+                >
+                  Quality is our mission.
+                </h4>
+                <p class="text-gray-600" id="solution-3-desc">
+                  We meticulously work through all the details and nodes in the
+                  drawings, and use only proven brands and materials. Complete
+                  construction documentation is always available on site, and
+                  our employees are trained in the use of materials and modern
+                  equipment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="services"
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20"
+      >
+        <h2
+          class="text-4xl font-bold text-center text-blue-900 mb-12 slide-up"
+          id="services-title"
+        >
+          Services
+        </h2>
+        <p
+          class="text-center text-xl text-gray-600 max-w-3xl mx-auto mb-12 slide-up"
+          id="services-intro"
+        >
+          We offer comprehensive solutions for your construction project, from
+          idea to final implementation. We work with properties ranging from 500
+          to 100,000 m² and specialize in various types of projects.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="group service-card bg-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 transition-all duration-300 hover:bg-blue-600 hover:shadow-xl hover:scale-105"
+          >
+            <i
+              class="fa-solid fa-hard-hat text-4xl text-blue-600 mb-4 group-hover:text-white"
+            ></i>
+            <h3
+              class="text-xl font-bold text-blue-800 mb-2 group-hover:text-white"
+              id="service-1-title"
+            >
+              Construction and Renovation
+            </h3>
+            <p
+              class="text-gray-600 group-hover:text-white transition-all duration-300"
+              id="service-1-desc"
+            >
+              We act as both a contractor and a general contractor, providing a
+              full range of services. Our experience covers various types of
+              properties including **Renovation** (residential homes, cafes,
+              restaurants, commercial spaces) and **Specialized work** (flat and
+              usable rooftops, facades).
+            </p>
+          </div>
+
+          <div
+            class="group service-card bg-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 transition-all duration-300 hover:bg-blue-600 hover:shadow-xl hover:scale-105"
+          >
+            <i
+              class="fa-solid fa-pencil-ruler text-4xl text-blue-600 mb-4 group-hover:text-white"
+            ></i>
+            <h3
+              class="text-xl font-bold text-blue-800 mb-2 group-hover:text-white"
+              id="service-2-title"
+            >
+              Design and Auditing
+            </h3>
+            <p
+              class="text-gray-600 group-hover:text-white transition-all duration-300"
+              id="service-2-desc"
+            >
+              A correct project is the foundation of successful construction.
+              Our team specializes in creating accurate and complete
+              documentation through **Project development** (creating detailed
+              drawings based on SNI standards) and **Drawing audit** (checking
+              existing projects for errors and providing recommendations).
+            </p>
+          </div>
+
+          <div
+            class="group service-card bg-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 transition-all duration-300 hover:bg-blue-600 hover:shadow-xl hover:scale-105"
+          >
+            <i
+              class="fa-solid fa-chart-line text-4xl text-blue-600 mb-4 group-hover:text-white"
+            ></i>
+            <h3
+              class="text-xl font-bold text-blue-800 mb-2 group-hover:text-white"
+              id="service-3-title"
+            >
+              Project Management and Development
+            </h3>
+            <p
+              class="text-gray-600 group-hover:text-white transition-all duration-300"
+              id="service-3-desc"
+            >
+              If you want to invest in real estate, we are ready to be your
+              reliable partner. We offer full-cycle project management and
+              development, which includes **Land search**, **Design and
+              obtaining permits**, and **Construction and commissioning of the
+              property**.
+            </p>
+          </div>
+
+          <div
+            class="group service-card bg-blue-50 p-6 rounded-xl shadow-lg border-l-4 border-blue-600 transition-all duration-300 hover:bg-blue-600 hover:shadow-xl hover:scale-105"
+          >
+            <i
+              class="fa-solid fa-users-cog text-4xl text-blue-600 mb-4 group-hover:text-white"
+            ></i>
+            <h3
+              class="text-xl font-bold text-blue-800 mb-2 group-hover:text-white"
+              id="service-4-title"
+            >
+              Construction Management
+            </h3>
+            <p
+              class="text-gray-600 group-hover:text-white transition-all duration-300"
+              id="service-4-desc"
+            >
+              We act in your best interest, controlling all stages of
+              construction if you work with another contractor. Our team
+              provides **Technical supervision and quality control**, **Budget
+              and schedule control**, and **Transparent reporting on the
+              progress of work**.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="stages"
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-blue-50 rounded-xl shadow-inner"
+      >
+        <h2
+          class="text-4xl font-bold text-center text-blue-900 mb-12 slide-up"
+          id="stages-title"
+        >
+          Work Stages
+        </h2>
+        <p
+          class="text-center text-xl text-gray-600 max-w-3xl mx-auto mb-12 slide-up"
+          id="stages-intro"
+        >
+          We are convinced that the success of a construction project depends on
+          strict adherence to every stage. Skipping or neglecting any stage can
+          lead to schedule delays, budget overruns, and reduced quality. That's
+          why we pay special attention to every step, starting with design.
+        </p>
+        <p
+          class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-12 slide-up"
+          id="stages-text-1"
+        >
+          Estimating project costs without detailed drawings is just guesswork.
+          To avoid unpleasant surprises, you must first complete the design and
+          approve all the details. This allows us to provide you with an
+          accurate estimate and timeline, rather than an "open" cost that can
+          increase during the process.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="bg-white p-8 rounded-xl shadow-lg slide-up">
+            <h3
+              class="text-2xl font-bold text-blue-800 mb-6"
+              id="stages-title-1"
+            >
+              Project timeline without ready-made drawings
+            </h3>
+            <ol class="space-y-4 relative border-l-4 border-gray-200 ml-4">
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >1</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-1-title">
+                  Project design work:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-1-desc">
+                  Timeline: 1–3 months
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >2</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-2-title">
+                  Preparing the estimate, work schedule, and financing schedule:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-2-desc">
+                  3–14 days
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >3</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-3-title">
+                  Contract signing:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-3-desc">
+                  1–5 days
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >4</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-4-title">
+                  Project mobilization:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-4-desc">
+                  1–2 weeks
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >5</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-5-title">
+                  Construction:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-5-desc">
+                  9–18 months
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >6</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-6-title">
+                  Project handover and demobilization:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-6-desc">
+                  1–2 weeks
+                </div>
+              </li>
+              <li class="ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >7</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-1-7-title">
+                  Warranty support:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-1-7-desc">
+                  1–3 years
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-lg slide-up">
+            <h3
+              class="text-2xl font-bold text-blue-800 mb-6"
+              id="stages-title-2"
+            >
+              Project timeline with ready-made drawings
+            </h3>
+            <ol class="space-y-4 relative border-l-4 border-gray-200 ml-4">
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >1</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-1-title">
+                  Project audit and adjustments:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-1-desc">
+                  Timeline: 1–2 weeks
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >2</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-2-title">
+                  Preparing the estimate, work schedule, and financing schedule:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-2-desc">
+                  3–14 days
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >3</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-3-title">
+                  Contract signing:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-3-desc">
+                  1–5 days
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >4</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-4-title">
+                  Project mobilization:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-4-desc">
+                  1–2 weeks
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >5</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-5-title">
+                  Construction:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-5-desc">
+                  9–18 months
+                </div>
+              </li>
+              <li class="mb-6 ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >6</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-6-title">
+                  Project handover and demobilization:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-6-desc">
+                  1–2 weeks
+                </div>
+              </li>
+              <li class="ml-6">
+                <span
+                  class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white counter"
+                  >7</span
+                >
+                <div class="font-semibold text-gray-900" id="stage-2-7-title">
+                  Warranty support:
+                </div>
+                <div class="text-yellow-800 font-bold" id="stage-2-7-desc">
+                  1–3 years
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gray-900 text-white rounded-xl shadow-2xl"
+      >
+        <h2
+          class="text-4xl font-bold text-center mb-12 slide-up"
+          id="contact-title"
+        >
+          Start Your Project Today!
+        </h2>
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+          <p class="text-xl slide-up" id="contact-intro">
+            Ready to bring your construction plans to life? We offer a reliable
+            partnership and a European approach to quality, regardless of the
+            scale and complexity of the project.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8 text-left">
+            <div class="slide-up">
+              <h3
+                class="text-2xl font-bold mb-4 text-blue-400"
+                id="geography-title"
+              >
+                Our project geography
+              </h3>
+              <ul class="space-y-2 text-gray-300">
+                <li id="geo-1">
+                  <i class="fi fi-sr-marker"></i> Surabaya: Construction and
+                  renovation of private projects from 300 m².
+                </li>
+                <li id="geo-2">
+                  <i class="fi fi-sr-marker"></i> Java, Bali, Lombok islands:
+                  Projects from 1,000 m².
+                </li>
+                <li id="geo-3">
+                  <i class="fi fi-sr-marker"></i> Any city or island in
+                  Indonesia: Projects from 3,000 m².
+                </li>
+              </ul>
+            </div>
+            <div class="slide-up">
+              <h3
+                class="text-2xl font-bold mb-4 text-blue-400"
+                id="directions-title"
+              >
+                Our directions
+              </h3>
+              <ul class="space-y-2 text-gray-300">
+                <li id="dir-1">
+                  <i class="fa-solid fa-building mr-2"></i> Residential
+                  construction: Villas, homes, apartments, and entire
+                  residential complexes.
+                </li>
+                <li id="dir-2">
+                  <i class="fa-solid fa-store mr-2"></i> Commercial
+                  construction: Restaurants, cafes, shopping centers, office
+                  spaces, sports complexes, and fitness centers.
+                </li>
+                <li id="dir-3">
+                  <i class="fa-solid fa-warehouse mr-2"></i> Industrial
+                  construction: Warehouses, production buildings, and logistics
+                  complexes.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="text-xl mt-8 slide-up" id="contact-text">
+            We are always ready to discuss your project. Contact us to arrange a
+            Zoom meeting or a personal meeting in Surabaya.
+          </p>
+          <div class="mt-8 slide-up">
+            <a
+              href="https://wa.me/6285717215263"
+              id="contact-cta"
+              class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-6">
+      <div class="container mx-auto flex flex-col items-center space-y-4">
+        <div class="flex space-x-6 text-2xl">
+          <a
+            href="https://facebook.com/namaperusahaan"
+            target="_blank"
+            class="hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://instagram.com/gsj_construction"
+            target="_blank"
+            class="hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 text-center md:text-left"
+        >
+          <p class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>mail@grahasentosajaya.com</span>
+          </p>
+          <p class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>0857 172 152 63</span>
+          </p>
+        </div>
+
+        <p
+          id="footer-text"
+          class="pt-4 border-t border-gray-700 w-full text-center"
+        >
+          &copy; 2024 PT. GRAHA SENTOSA JAYA. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

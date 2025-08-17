@@ -1,0 +1,62 @@
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+/* Custom smooth scroll for links */
+html {
+  scroll-behavior: smooth;
+}
+/* Style for the active nav link to provide visual feedback */
+.nav-link.active {
+  color: #e3ac3d; /* blue-700 */
+  font-weight: 600;
+}
+.value-title {
+  font-weight: bold;
+  color: #1e40af; /* Contoh warna biru */
+}
+.content p {
+  margin-top: 0.5rem;
+}
+/* CSS untuk Animasi */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.slide-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.service-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 200px;
+}
+
+.counter {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
