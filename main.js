@@ -83,17 +83,27 @@ const translations = {
     "services-intro":
       "Kami menawarkan solusi komprehensif untuk proyek konstruksi Anda, dari ide hingga implementasi akhir. Kami bekerja dengan properti mulai dari 500 hingga 100.000 m² dan berspesialisasi dalam berbagai jenis proyek.",
     "service-1-title": "Konstruksi dan Renovasi",
-    "service-1-desc":
-      "Kami bertindak sebagai kontraktor dan kontraktor umum, menyediakan berbagai layanan penuh untuk berbagai jenis properti.",
+    "service-1-desc": `Kami bertindak sebagai kontraktor dan kontraktor umum, menyediakan berbagai layanan lengkap. Pengalaman kami mencakup berbagai jenis properti 
+      <li class="font-bold"> Renovasi: Rumah tinggal, kafe, restoran, ruang komersial.</li>
+      <li class="font-bold"> Pekerjaan khusus: Atap datar dan fungsional, fasad.</li>`,
     "service-2-title": "Desain dan Audit",
-    "service-2-desc":
-      "Tim kami berspesialisasi dalam membuat dokumentasi yang akurat dan lengkap, serta memeriksa proyek yang ada untuk kesalahan dan optimasi.",
+    "service-2-desc": `Tim kami berspesialisasi dalam membuat dokumentasi yang akurat dan lengkap, serta memeriksa proyek yang ada untuk kesalahan dan optimasi.
+      <li class="font-bold"> Pengembangan proyek: Kami membuat gambar rinci berdasarkan standar SNI dan sistem konstruksi internasional.
+      </li>
+      <li class="font-bold"> Audit gambar: Kami memeriksa proyek yang ada untuk kesalahan, memberikan rekomendasi untuk perbaikan dan optimasi.</li>
+      `,
     "service-3-title": "Manajemen dan Pengembangan Proyek",
-    "service-3-desc":
-      "Kami menawarkan layanan manajemen dan pengembangan proyek siklus penuh, termasuk pencarian lahan, desain, dan perolehan izin.",
+    "service-3-desc": `Kami menawarkan layanan manajemen dan pengembangan proyek siklus penuh, termasuk pencarian lahan, desain, dan perolehan izin.
+      <li class="font-bold"> Pencarian lahan.</li>
+      <li class="font-bold"> Desain dan perolehan izin.</li>
+      <li class="font-bold"> Konstruksi dan komisioning properti.</li>
+      `,
     "service-4-title": "Manajemen Konstruksi",
-    "service-4-desc":
-      "Kami bertindak demi kepentingan terbaik Anda, mengendalikan semua tahap konstruksi, termasuk pengawasan teknis, kualitas, anggaran, dan kontrol jadwal.",
+    "service-4-desc": `Kami bertindak demi kepentingan terbaik Anda, mengendalikan semua tahap konstruksi, termasuk pengawasan teknis, kualitas, anggaran, dan kontrol jadwal.
+      <li class="font-bold"> Pengawasan teknis dan kontrol kualitas.</li>
+      <li class="font-bold"> Kontrol anggaran dan jadwal.</li>
+      <li class="font-bold"> Pelaporan yang transparan tentang kemajuan pekerjaan.</li>
+      `,
 
     // Stages
     "stages-title": "Tahapan Kerja",
@@ -140,16 +150,18 @@ const translations = {
       "Siap mewujudkan rencana konstruksi Anda? Kami menawarkan kemitraan yang andal dan pendekatan Eropa terhadap kualitas, terlepas dari skala dan kompleksitas proyek.",
     "geography-title": "Geografi proyek kami",
     "geo-1":
-      "Surabaya: Konstruksi dan renovasi proyek pribadi mulai dari 300 m².",
-    "geo-2": "Pulau Jawa, Bali, Lombok: Proyek mulai dari 1.000 m².",
-    "geo-3": "Setiap kota atau pulau di Indonesia: Proyek mulai dari 3.000 m².",
+      '<i class="fi fi-sr-marker"></i> Surabaya: Konstruksi dan renovasi proyek pribadi mulai dari 300 m².',
+    "geo-2":
+      '<i class="fi fi-sr-marker"></i> Pulau Jawa, Bali, Lombok: Proyek mulai dari 1.000 m².',
+    "geo-3":
+      '<i class="fi fi-sr-marker"></i> Setiap kota atau pulau di Indonesia: Proyek mulai dari 3.000 m².',
     "directions-title": "Arah kami",
     "dir-1":
-      " Konstruksi perumahan: Villa, rumah, apartemen, dan seluruh kompleks perumahan.",
+      '<i class="fa-solid fa-building mr-2"></i> Konstruksi perumahan: Villa, rumah, apartemen, dan seluruh kompleks perumahan.',
     "dir-2":
-      " Konstruksi komersial: Restoran, kafe, pusat perbelanjaan, ruang kantor, kompleks olahraga, dan pusat kebugaran.",
+      '<i class="fa-solid fa-store mr-2"></i> Konstruksi komersial: Restoran, kafe, pusat perbelanjaan, ruang kantor, kompleks olahraga, dan pusat kebugaran.',
     "dir-3":
-      " Konstruksi industri: Gudang, bangunan produksi, dan kompleks logistik.",
+      '<i class="fa-solid fa-warehouse mr-2"></i> Konstruksi industri: Gudang, bangunan produksi, dan kompleks logistik.',
     "contact-text":
       "Kami selalu siap untuk mendiskusikan proyek Anda. Hubungi kami untuk mengatur pertemuan Zoom atau pertemuan pribadi di Surabaya.",
     "contact-cta": "Hubungi Kami",
@@ -239,19 +251,29 @@ const translations = {
     // Services
     "services-title": "Services",
     "services-intro":
-      "We offer comprehensive solutions for your construction project, from idea to final implementation. We work with properties ranging from 500 to 100,000 m² and specialize in various types of projects.",
+      "We act as both a contractor and a general contractor, providing a full range of services. Our experience covers various types of properties including **Renovation** (residential homes, cafes, restaurants, commercial spaces) and **Specialized work** (flat and usable rooftops, facades).",
     "service-1-title": "Construction and Renovation",
-    "service-1-desc":
-      "We act as both a contractor and a general contractor, providing a full range of services for various types of properties.",
+    "service-1-desc": `We act as both a contractor and a general contractor, providing a full range of services for various types of properties.
+        <li class="font-bold"> Renovation: Residential homes, cafes, restaurants, commercial spaces.</li>
+        <li class="font-bold"> Specialized work: Flat and usable rooftops, facades.</li>
+      `,
     "service-2-title": "Design and Auditing",
-    "service-2-desc":
-      "Our team specializes in creating accurate and complete documentation, as well as checking existing projects for errors and optimization.",
+    "service-2-desc": `Our team specializes in creating accurate and complete documentation, as well as checking existing projects for errors and optimization.
+      <li class="font-bold"> Project development: We create detailed drawings based on SNI standards and international construction systems.</li>
+      <li class="font-bold"> Drawing audit: We check existing projects for errors, provide recommendations for their improvement and optimization.</li>
+      `,
     "service-3-title": "Project Management and Development",
-    "service-3-desc":
-      "We offer full-cycle project management and development, including land search, design, and obtaining permits.",
+    "service-3-desc": `We offer full-cycle project management and development, including land search, design, and obtaining permits.
+      <li class="font-bold"> Land search.</li>
+      <li class="font-bold"> Design and obtaining permits.</li>
+      <li class="font-bold"> Construction and commissioning of the property.</li>
+      `,
     "service-4-title": "Construction Management",
-    "service-4-desc":
-      "We act in your best interest, controlling all stages of construction, including technical supervision, quality, budget, and schedule control.",
+    "service-4-desc": `We act in your best interest, controlling all stages of construction, including technical supervision, quality, budget, and schedule control.
+      <li class="font-bold"> Technical supervision and quality control.</li>
+      <li class="font-bold"> Budget and schedule control.</li>
+      <li class="font-bold"> Transparent reporting on the progress of work.</li>
+      `,
 
     // Stages
     "stages-title": "Work Stages",
@@ -298,16 +320,18 @@ const translations = {
       "Ready to bring your construction plans to life? We offer a reliable partnership and a European approach to quality, regardless of the scale and complexity of the project.",
     "geography-title": "Our project geography",
     "geo-1":
-      "Surabaya: Construction and renovation of private projects from 300 m².",
-    "geo-2": "Java, Bali, Lombok islands: Projects from 1,000 m².",
-    "geo-3": "Any city or island in Indonesia: Projects from 3,000 m².",
+      '<i class="fi fi-sr-marker"></i> Surabaya: Construction and renovation of private projects from 300 m².',
+    "geo-2":
+      '<i class="fi fi-sr-marker"></i> Java, Bali, Lombok islands: Projects from 1,000 m².',
+    "geo-3":
+      '<i class="fi fi-sr-marker"></i> Any city or island in Indonesia: Projects from 3,000 m².',
     "directions-title": "Our directions",
     "dir-1":
-      " Residential construction: Villas, homes, apartments, and entire residential complexes.",
+      '<i class="fa-solid fa-building mr-2"></i> Residential construction: Villas, homes, apartments, and entire residential complexes.',
     "dir-2":
-      " Commercial construction: Restaurants, cafes, shopping centers, office spaces, sports complexes, and fitness centers.",
+      '<i class="fa-solid fa-store mr-2"></i> Commercial construction: Restaurants, cafes, shopping centers, office spaces, sports complexes, and fitness centers.',
     "dir-3":
-      "Industrial construction: Warehouses, production buildings, and logistics complexes.",
+      '<i class="fa-solid fa-warehouse mr-2"></i> Industrial construction: Warehouses, production buildings, and logistics complexes.',
     "contact-text":
       "We are always ready to discuss your project. Contact us to arrange a Zoom meeting or a personal meeting in Surabaya.",
     "contact-cta": "Contact Us",
@@ -326,19 +350,8 @@ function updateLanguage(lang) {
   for (const key in currentLang) {
     const element = document.getElementById(key);
     if (element) {
-      if (
-        key.includes("-cta") ||
-        key.includes("title") ||
-        key.includes("desc") ||
-        key.includes("intro") ||
-        key.includes("text") ||
-        key.includes("tagline") ||
-        key.includes("mission")
-      ) {
-        element.innerHTML = currentLang[key];
-      } else {
-        element.textContent = currentLang[key];
-      }
+      // Use innerHTML for keys that might contain HTML tags
+      element.innerHTML = currentLang[key];
     }
   }
 }
