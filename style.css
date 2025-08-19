@@ -60,3 +60,57 @@ html {
   transform: translateY(10px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+/* Gaya kustom untuk tata letak masonry */
+.masonry-container {
+  column-count: 1; /* Untuk mobile */
+  column-gap: 1.5rem; /* Jarak antar kolom */
+}
+.gallery-item {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 1.5rem; /* Jarak antar item */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animasi hover */
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive untuk tablet dan desktop */
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .masonry-container {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .masonry-container {
+    column-count: 3;
+  }
+}
+
+/* Gaya untuk lightbox (modal zoom) */
+.lightbox-modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lightbox-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

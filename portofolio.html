@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. GRAHA SENTOSA JAYA</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4C+x/bA+1S9F9e/c/6z+fGk+D0D9B/E2kX1X/i/0sFzJp/E8sQ+L4t3Zq8t/C5O5J7K6w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-xl font-bold text-blue-800">
+          <img src="./img/logo-gsj.png" alt="logo-gsj" class="logo" />
+        </a>
+
+        <div class="flex items-center space-x-4">
+          <div class="relative inline-block text-gray-700">
+            <select
+              id="language-switcher"
+              class="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:shadow-outline cursor-pointer"
+            >
+              <option value="id">ID</option>
+              <option value="en">EN</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+            >
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </div>
+          </div>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="index.html#about"
+              id="nav-about"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >About Company</a
+            >
+            <a
+              href="index.html#problems"
+              id="nav-problems"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Problems & Solutions</a
+            >
+            <a
+              href="index.html#services"
+              id="nav-services"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Services</a
+            >
+            <a
+              href="index.html#stages"
+              id="nav-stages"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Work Stages</a
+            >
+            <a
+              href="index.html#contact"
+              id="nav-contact"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Contact Us</a
+            >
+            <a
+              href="portofolio.html"
+              id="nav-portfolio"
+              class="nav-link text-gray-600 hover:text-blue-700 transition-colors duration-300"
+              >Portfolio</a
+            >
+          </div>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-600 focus:outline-none"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <div class="flex flex-col p-4 space-y-2">
+          <a
+            href="#about"
+            id="nav-mobile-about"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >About Company</a
+          >
+          <a
+            href="#problems"
+            id="nav-mobile-problems"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Problems & Solutions</a
+          >
+          <a
+            href="#services"
+            id="nav-mobile-services"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Services</a
+          >
+          <a
+            href="#stages"
+            id="nav-mobile-stages"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Work Stages</a
+          >
+          <a
+            href="#contact"
+            id="nav-mobile-contact"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Contact Us</a
+          >
+          <a
+            href="#portfolio"
+            id="nav-mobile-portfolio"
+            class="nav-link-mobile block text-gray-600 hover:bg-gray-100 p-2 rounded transition-colors duration-300"
+            >Portfolio</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container mx-auto px-4 py-12">
+      <!-- Galeri Foto dengan tata letak masonry yang responsif -->
+      <h2
+        class="text-4xl font-bold text-center text-blue-900 mb-12 slide-up"
+        id="portfolio-title"
+      >
+        Our Project
+      </h2>
+      <div class="masonry-container">
+        <!-- Item Galeri 1 -->
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-01-04-19-41-26 (1).jpg"
+            alt="Proyek 1"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <!-- Item Galeri 2 -->
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-02-26-16-56-30.jpg"
+            alt="Projek 2"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <!-- Item Galeri 3 -->
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-02-26-19-59-36 (1).jpg"
+            alt="Projek 3"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <!-- Item Galeri 4 -->
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-02-26-21-08-11.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <!-- Item Galeri 5 -->
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-03-07-13-40-53.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <!-- Item Galeri 6 -->
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-05-02-07-50-19.jpg"
+            alt="Kolam Renang Resort"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-05-10-07-20-50 (2).jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-05-14-13-09-23.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-05-28-12-55-10.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-06-03-11-07-58 (1).jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-06-22-07-56-33.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-07-07-10-44-37.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-07-12-22-13-45.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-10-05-17-07-37 (1).jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-11-03-14-18-10.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-11-22-18-43-48.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2023-11-26-21-01-53.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2024-01-08-20-40-26 (1).jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2024-01-08-20-40-27.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2024-02-13-08-59-36.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2024-04-01-10-21-48.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/PHOTO-2025-03-13-15-23-56.jpg"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/Файл_001.png"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/Файл_003.png"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+
+        <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="./img/Portfolio/Файл_004.png"
+            alt="Projek"
+            class="w-full h-auto rounded-xl"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-6">
+      <div class="container mx-auto flex flex-col items-center space-y-4">
+        <div class="flex space-x-6 text-2xl">
+          <a
+            href="https://facebook.com/namaperusahaan"
+            target="_blank"
+            class="hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://instagram.com/gsj.construction"
+            target="_blank"
+            class="hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 text-center md:text-left"
+        >
+          <p class="flex items-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>mail@grahasentosajaya.com</span>
+          </p>
+          <p class="flex items-center space-x-2">
+            <i class="fas fa-phone"></i>
+            <span>0857 172 152 63</span>
+          </p>
+        </div>
+
+        <p
+          id="footer-text"
+          class="pt-4 border-t border-gray-700 w-full text-center"
+        >
+          &copy; 2025 PT. GRAHA SENTOSA JAYA. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17477144938"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-17477144938");
+    </script>
+  </body>
+</html>

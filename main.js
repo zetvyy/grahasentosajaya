@@ -1,13 +1,13 @@
 const translations = {
   id: {
     // Nav
-    "nav-home": "Beranda",
+    "nav-portfolio": "Portfolio",
     "nav-about": "Tentang Perusahaan",
     "nav-problems": "Masalah & Solusi",
     "nav-services": "Layanan",
     "nav-stages": "Tahapan Kerja",
     "nav-contact": "Hubungi Kami",
-    "nav-mobile-home": "Beranda",
+    "nav-mobile-portfolio": "Portfolio",
     "nav-mobile-about": "Tentang Perusahaan",
     "nav-mobile-problems": "Masalah & Solusi",
     "nav-mobile-services": "Layanan",
@@ -168,17 +168,19 @@ const translations = {
 
     // Footer
     "footer-text":
-      "&copy; 2024 PT. GRAHA SENTOSA JAYA. Semua hak dilindungi undang-undang.",
+      "&copy; 2025 PT. GRAHA SENTOSA JAYA. Semua hak dilindungi undang-undang.",
+
+    "portfolio-title": "Projek Kami",
   },
   en: {
     // Nav
-    "nav-home": "Home",
+    "nav-portfolio": "Portfolio",
     "nav-about": "About Company",
     "nav-problems": "Problems & Solutions",
     "nav-services": "Services",
     "nav-stages": "Work Stages",
     "nav-contact": "Contact Us",
-    "nav-mobile-home": "Home",
+    "nav-mobile-portfolio": "Portfolio",
     "nav-mobile-about": "About Company",
     "nav-mobile-problems": "Problems & Solutions",
     "nav-mobile-services": "Services",
@@ -337,7 +339,9 @@ const translations = {
     "contact-cta": "Contact Us",
 
     // Footer
-    "footer-text": "&copy; 2024 PT. GRAHA SENTOSA JAYA. All rights reserved.",
+    "footer-text": "&copy; 2025 PT. GRAHA SENTOSA JAYA. All rights reserved.",
+
+    "portfolio-title": "Our Project",
   },
 };
 
@@ -487,3 +491,43 @@ function animateCounters() {
 }
 
 window.addEventListener("load", animateCounters);
+
+// Ambil elemen-elemen yang diperlukan
+const galleryItems = document.querySelectorAll(".gallery-item");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+
+// Fungsi untuk menampilkan lightbox
+function showLightbox(imageSrc, imageAlt) {
+  lightboxImage.src = imageSrc;
+  lightboxImage.alt = imageAlt;
+  lightbox.classList.remove("hidden");
+}
+
+// Fungsi untuk menyembunyikan lightbox
+function hideLightbox() {
+  lightbox.classList.add("hidden");
+}
+
+// Tambahkan event listener untuk setiap item di galeri
+galleryItems.forEach((item) => {
+  const image = item.querySelector("img");
+  image.addEventListener("click", () => {
+    showLightbox(image.src, image.alt);
+  });
+});
+
+// Tambahkan event listener untuk menutup modal
+lightbox.addEventListener("click", (e) => {
+  // Tutup modal jika area di luar gambar atau tombol close diklik
+  if (e.target.id === "lightbox" || e.target.closest("#close-btn")) {
+    hideLightbox();
+  }
+});
+
+// Tutup modal dengan tombol 'Escape'
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !lightbox.classList.contains("hidden")) {
+    hideLightbox();
+  }
+});
